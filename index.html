@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+			<link rel="stylesheet" href="main.css"
+			 type="text/css" media = "screen" charset="utf-8">
+		<script>
+			function changeBG(el,clr){
+			var elem = document.getElementById(el);
+			elem.style.transition = "background 1.0s linear 0s";
+			elem.style.background = clr;
+			}
+		</script>
+		<body>
+			<button onclick="changeBG('box1','#d10000')">Red</button>
+			<button onclick="changeBG('box1','#ff6622')">Orange</button>
+			<button onclick="changeBG('box1','#ffda21')">Yellow</button>
+			<button onclick="changeBG('box1','#33dd00')">Green</button>
+			<button onclick="changeBG('box1','#1133cc')">Blue</button>
+			<button onclick="changeBG('box1','#220066')">Indigo</button>
+			<button onclick="changeBG('box1','#330044')">Violet</button>
+			<button onclick="changeBG('box1','#FFF')">White</button>
+			<div id="box1">Click one the buttons above to change the background color!</div>
+		</body>
+	</html>
